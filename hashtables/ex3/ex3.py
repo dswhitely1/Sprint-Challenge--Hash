@@ -4,14 +4,14 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     index = {}
-    for i in len(arrays):
+    for arr in arrays:
         for item in arr:
-            if i == 0:
-                index[item] = False
+            if item not in index:
+                index[item] = 1
             else:
-                if item in index:
-                    index[item] = True
-    print(index)
+                index[item] += 1
+
+    result = [key for key in index if index[key] == len(arrays)]
     return result
 
 
