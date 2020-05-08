@@ -4,19 +4,20 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     # Implement Hash Table
     results = {}
+
     # Store as total: (index1, index2)
     # Recursive Get all possible values
     def helper(arr, index=0):
         if index == len(weights):
             return
-        for i in range(index+1, len(weights)):
+        for i in range(index + 1, len(weights)):
             sum = weights[index] + weights[i]
             if sum not in results:
                 if i > index:
                     results[sum] = (i, index)
                 else:
                     results[sum] = (index, i)
-            helper(weights, index+1)
+            helper(weights, index + 1)
 
     helper(weights)
     if limit in results:
