@@ -16,7 +16,7 @@ preceding days.
 
 You are not allowed to collaborate during the Sprint Challenge. However,
 you are encouraged to follow the twenty-minute rule and seek support
-from your PM and Instructor in your cohort help channel on Slack. Your
+from your TL and Instructor in your cohort help channel on Slack. Your
 work reflects your proficiency in Python and your command of the
 concepts and techniques in related to hash tables.
 
