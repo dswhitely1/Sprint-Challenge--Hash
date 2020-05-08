@@ -3,7 +3,15 @@ def intersection(arrays):
     """
     YOUR CODE HERE
     """
-
+    index = {}
+    for i in len(arrays):
+        for item in arr:
+            if i == 0:
+                index[item] = False
+            else:
+                if item in index:
+                    index[item] = True
+    print(index)
     return result
 
 
